@@ -22,6 +22,12 @@ Route::get('/logout', function () {
     return redirect('logout');
 });
 Route::view('/register', 'register');
+//
+Route::view('/about', 'about');
+Route::view('/book', 'book');
+Route::view('/homepage', 'homepage');
+Route::view('/menu', 'menu');
+
 Route::post('/login', [UserController::class, 'login']);
 Route::post('/register', [UserController::class, 'register']);
 Route::get('/', [ProductController::class, 'index']);
